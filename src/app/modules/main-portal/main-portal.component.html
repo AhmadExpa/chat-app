@@ -1,0 +1,40 @@
+<div class="main-about-page-wrapper overflow-hidden">
+  <!-- First Container -->
+  <div
+    class="container first-container-wrapper justify-content-between ps-md-4 text-start"
+  >
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>How did the <span>MindMingle</span> begin?</h1>
+      </div>
+      <div class="col-lg-6">
+        <p>
+          Through a combination of active participation, communication,
+          teamwork, and rapid growth. A dedication to transparency and agreement
+          with our chosen working style was easily incorporated into all of
+          this.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Container -->
+  <div class="second-container-wrapper text-start">
+    <h1>Everything revolves around the people.</h1>
+  </div>
+
+  <!-- Fifth Container - Our Core Beliefs -->
+  <div class="container fifth-container-wrapper py-5">
+    <div class="row">
+      <h1 class="text-center mb-3">OUR CORE BELIEFS</h1>
+      <div class="col-lg-4" *ngFor="let belief of coreBeliefs">
+        <div class="card">
+          <div class="card-body text-start px-3">
+            <h5 class="card-title mt-3">{{ belief.title }}</h5>
+            <p class="card-text">{{ belief.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

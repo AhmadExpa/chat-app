@@ -1,0 +1,59 @@
+<section class="d-flex align-items-center" style="height: 100vh">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col">
+        <form (ngSubmit)="login()">
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="loginEmail">Email address</label>
+            <input
+              type="email"
+              id="loginEmail"
+              class="form-control form-control-lg"
+              [(ngModel)]="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="loginPassword">Password</label>
+            <input
+              type="password"
+              id="loginPassword"
+              class="form-control form-control-lg"
+              [(ngModel)]="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="rememberMe"
+                checked
+              />
+              <label class="form-check-label" for="rememberMe">
+                Remember me
+              </label>
+            </div>
+            <a routerLink="/auth/register">Not a member?</a>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-lg btn-block w-100">
+            Sign in
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
